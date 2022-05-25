@@ -11,9 +11,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
 
-// console.log ('getAnswer', getAswer)
-
-
 
   return (
     <BrowserRouter>

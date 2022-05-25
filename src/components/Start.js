@@ -22,7 +22,8 @@ export const Start = () => {
         
     }
 
-    console.log("result", result);
+    // console.log("result", result);
+
     const getAnswer = (event) => {
       if (event.target.value === 'yes') {
         if (count === 0) {
@@ -39,8 +40,9 @@ export const Start = () => {
           setAnswer(answer)
         }
       }
-  
     }
+    console.log('getAnswer',answer);
+
   
     const getReset = () => {
       setAnswer(0)

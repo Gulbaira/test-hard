@@ -13,26 +13,32 @@ export const Questions = (props) => {
                         onClick={(e) => props.getAnswer(e)}
                         type="radio" id="q1" name="q1" value={props.value1} />
                     <label htmlFor="q1">{props.answ1}</label>
+
                 </div>
                 <div>
                     <input
                         onClick={(e) => props.getAnswer(e)}
-
-                        type="radio" id="q2" name="q2" value={props.value2} />
+                        type="radio" id="q2" name="q1" value={props.value2} />
                     <label htmlFor="q2">{props.answ2}</label>
                 </div>
                 <div>
                     <input
                         onClick={(e) => props.getAnswer(e)}
-
-                        type="radio" id="q3" name="q3" value={props.value3} />
+                        type="radio" id="q3" name="q1" value={props.value3} />
                     <label htmlFor="q3">{props.answ3}</label>
                 </div>
+                <div>
+                    <input
+                        onClick={(e) => props.getAnswer(e)}
+                        type="radio" id="q4" name="q1" value={props.value4} />
+                    <label htmlFor="q4">{props.answ4}</label>
+                </div>
+
                 <div>
                     <input className='button-main'
                     onClick={() => {
                         props.handleNext()
-                        // props.getReset()
+                        props.getReset()
                     }}
                     type="button" value={props.next} />
                 </div>

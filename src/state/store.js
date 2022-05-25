@@ -1,4 +1,3 @@
- import './store.scss'
  
  const store = {
     questions: [
@@ -14,8 +13,8 @@
             value3: 'yes',
             value4: 'no',
 
-            path: '/1',
-            link: '/2',
+            // path: '/1',
+            // link: '/2',
             next: 'NEXT',
 
         },
@@ -25,14 +24,14 @@
             answ1: '32',
             answ2: '22',
             answ3: '11',
-            answ4: '11',
+            answ4: '10',
             value1: 'no',
             value2: 'yes',
             value3: 'no',
             value4: 'no',
 
-            path: '/2',
-            link: '/3',
+            // path: '/2',
+            // link: '/3',
             next: 'NEXT',
         },
         {
@@ -49,8 +48,8 @@
             value4: 'no',
 
 
-            path: '/3',
-            link: '/result',
+            // path: '/3',
+            // link: '/result',
             next: 'FINISH',
         },
     ]
