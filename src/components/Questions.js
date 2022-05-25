@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink, Route } from 'react-router-dom';
+import './Questions.scss'
 
 export const Questions = (props) => {
+    if (!props?.id) return null
     return (
-        <Route exact path={props.path}>
+       
             <div>
                 <h2>{props.question}</h2>
                 <div>
@@ -27,12 +29,15 @@ export const Questions = (props) => {
                     <label htmlFor="q3">{props.answ3}</label>
                 </div>
                 <div>
-                    <NavLink to={props.link}><input
-                    onClick={props.getReset} 
-                    type="button" value={props.next} /></NavLink>
+                    <input className='button-main'
+                    onClick={() => {
+                        props.handleNext()
+                        // props.getReset()
+                    }}
+                    type="button" value={props.next} />
                 </div>
             </div>
-        </Route>
+    
     )
 }
 
